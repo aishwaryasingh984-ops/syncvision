@@ -48,8 +48,8 @@ export default function ContactHero() {
                <p className="text-white/40 text-xs md:text-sm uppercase tracking-[0.3em] font-bold">
                  Official Correspondence
                </p>
-               <a href="mailto:official@syncvisionresearch.com" className="text-xl sm:text-2xl font-light hover:text-[var(--syncvision-gold)] transition-colors break-words">
-                  official@syncvisionresearch.com
+               <a href="mailto:aishwarya.singh@syncvisionresearch.com" className="text-xl sm:text-2xl font-light hover:text-[var(--syncvision-gold)] transition-colors break-words">
+                  aishwarya.singh@syncvisionresearch.com
                </a>
             </div>
           </Reveal>

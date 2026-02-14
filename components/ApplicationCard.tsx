@@ -18,7 +18,7 @@ export function ApplicationCard() {
         
         {/* CTA Button: Using syncvision-gold for high visibility */}
         <a 
-          href="mailto:official@syncvisionresearch.com"
+          href="mailto:aishwarya.singh@syncvisionresearch.com"
           className="
             flex items-center justify-center gap-3 w-full
             bg-[var(--syncvision-gold)]
@@ -33,7 +33,7 @@ export function ApplicationCard() {
 
         
         <p className="mt-6 text-center text-xs uppercase tracking-widest font-bold">
-          Official Email: official@syncvisionresearch.com
+          Official Email: aishwarya.singh@syncvisionresearch.com
         </p>
       </div>
     </Reveal>

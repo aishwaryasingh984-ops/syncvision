@@ -53,7 +53,7 @@ export default function Footer() {
           {/* Column 2: Quick Links */}
           <div className="text-center sm:text-left lg:pl-12">
             <h4 className="text-lg font-bold mb-8 text-[var(--syncvision-gold)] tracking-tight">Quick Links</h4>
-            <ul className="space-y-4 text-white/70 text-sm">
+            <ul className="space-y-4 text-white text-sm">
               <li><Link href="/about" className="hover:text-[var(--syncvision-gold)] hover:pl-2 transition-all duration-300">About Us</Link></li>
               <li><Link href="/services" className="hover:text-[var(--syncvision-gold)] hover:pl-2 transition-all duration-300">Our Services</Link></li>
               <li><Link href="/therapeutic-areas" className="hover:text-[var(--syncvision-gold)] hover:pl-2 transition-all duration-300">Therapeutic Areas</Link></li>
@@ -64,7 +64,7 @@ export default function Footer() {
           {/* Column 3: Expertise */}
           <div className="text-center sm:text-left">
             <h4 className="text-lg font-bold mb-8 text-[var(--syncvision-gold)] tracking-tight">Expertise</h4>
-            <ul className="space-y-4 text-white/70 text-sm">
+            <ul className="space-y-4 text-white text-sm">
               <li className="hover:text-white transition-colors cursor-default">Oncology</li>
               <li className="hover:text-white transition-colors cursor-default">Neurology</li>
               <li className="hover:text-white transition-colors cursor-default">Cardiology</li>
@@ -76,20 +76,20 @@ export default function Footer() {
           {/* Column 4: Contact Information */}
           <div className="text-center sm:text-left">
             <h4 className="text-lg font-bold mb-8 text-[var(--syncvision-gold)] tracking-tight">Contact Us</h4>
-            <ul className="space-y-6 text-white/70 text-sm">
+            <ul className="space-y-6 text-white text-sm">
               <li className="flex flex-col sm:flex-row items-center sm:items-start gap-4 group/item">
                 <MapPin className="w-5 h-5 text-[var(--syncvision-gold)] flex-shrink-0" />
-                <span className="leading-relaxed">DEMO ADDRESS, Maharashtra, India</span>
+                <span className="leading-relaxed">Maharashtra, India</span>
               </li>
               <li className="flex flex-col sm:flex-row items-center sm:items-start gap-4 group/item">
                 <Mail className="w-5 h-5 text-[var(--syncvision-gold)] flex-shrink-0" />
-                <a href="mailto:official@syncvisionresearch.com" className="hover:text-white transition-colors break-all">
-                  official@syncvisionresearch.com
+                <a href="mailto:aishwarya.singh@syncvisionresearch.com" className="hover:text-white transition-colors break-all">
+                  aishwarya.singh@syncvisionresearch.com
                 </a>
               </li>
               <li className="flex flex-col sm:flex-row items-center sm:items-start gap-4 group/item">
                 <Phone className="w-5 h-5 text-[var(--syncvision-gold)] flex-shrink-0" />
-                <span className="hover:text-white transition-colors">+91 99999-99999</span>
+                <span className="hover:text-white transition-colors">+91 9711416627</span>
               </li>
             </ul>
           </div>

@@ -16,6 +16,8 @@ interface ContactInfoCardProps {
 }
 
 export default function ContactPage() {
+  const location = "Wellington, Pride World City, Charholi Budruk, Pune, Maharashtra 412105";
+  const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(location)}&output=embed`;
   return (
     <main className="bg-[#F7F9FB] min-h-screen">
       <Navbar />
@@ -57,27 +59,25 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section: Optimized for Hub/Tablet Height */}
-      <section className="pb-20 md:pb-24">
+      {/* <section className="pb-20 md:pb-24">
         <div className="max-w-7xl mx-auto px-6">
           <Reveal>
             <div className="w-full h-[350px] md:h-[450px] bg-white rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white relative group">
-               {/* Brand Overlay */}
                <div className="absolute inset-0 bg-[var(--syncvision-green)]/5 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none" />
                
-               {/* Map Placeholder with Brand Colors */}
-               <div className="w-full h-full flex items-center justify-center bg-slate-50">
-                  <div className="text-center px-6">
-                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                      <MapPin className="w-8 h-8 text-[var(--syncvision-gold)] animate-bounce" />
-                    </div>
-                    <h4 className="text-[var(--syncvision-green)] font-black uppercase tracking-tighter text-xl mb-2">SyncVision Pune</h4>
-                    <p className="text-slate-400 font-bold uppercase tracking-[0.2em] text-[10px]">
-                      Interactive Map Integration Coming Soon
-                    </p>
-                  </div>
-               </div>
 
-               {/* Location Tag */}
+               <div className="w-full h-full">
+                <iframe
+                  src={mapSrc}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-xl"
+                ></iframe>
+              </div>
                <div className="absolute bottom-6 left-6 z-20 bg-[var(--syncvision-green)] px-5 py-3 rounded-xl shadow-xl border border-white/10">
                   <p className="text-[var(--syncvision-gold)] font-black uppercase tracking-tighter text-xs">Maharashtra, India</p>
                   <p className="text-white text-[9px] uppercase font-bold tracking-widest opacity-70">Primary Service Hub</p>
@@ -85,7 +85,7 @@ export default function ContactPage() {
             </div>
           </Reveal>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </main>

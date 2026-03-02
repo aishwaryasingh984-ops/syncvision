@@ -6,13 +6,15 @@ import { Mail, MapPin, Phone, Linkedin, Twitter, Facebook, Instagram } from "luc
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const location = "Wellington, Pride World City, Charholi Budruk, Pune, Maharashtra 412105";
+  const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(location)}&output=embed`;
 
   return (
     /* Fixed Padding: Increased pt to ensure separation from content on short screens */
     <footer className="bg-[var(--syncvision-green)] text-white pt-20 lg:pt-24 pb-10 border-t border-white/5 relative overflow-hidden">
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12 mb-16 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-12 mb-16 items-start">
           
           {/* Column 1: Brand Card - Left Aligned on Mobile per HomeHero Reference */}
           <div className="flex flex-col items-start">
@@ -97,6 +99,25 @@ export default function Footer() {
                 "Where Vision Meets Integrity"
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Column 5: Location Map */}
+        <div className="text-left">
+          <h4 className="text-base font-bold mb-8 text-[var(--syncvision-gold)] uppercase tracking-widest">
+            Our Location
+          </h4>
+
+          <div className="w-full h-[400px] rounded-xl overflow-hidden border border-white/10 shadow-lg">
+            <iframe
+              src={mapSrc}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
 

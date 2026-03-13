@@ -91,8 +91,8 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-4 group">
                 <Phone className="w-5 h-5 text-[var(--syncvision-gold)] flex-shrink-0 mt-0.5" />
-                <a href="tel:+919711416627">
-                <span className="text-white/80">+91 9711416627</span>
+                <a href="tel:+918669569686">
+                <span className="text-white/80">+91 866 956 9686</span>
                 </a>
               </li>
               <li className="mt-4 border-l-2 border-[var(--syncvision-gold)] pl-4 italic text-white/50 text-xs">

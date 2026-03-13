@@ -40,7 +40,7 @@ export default function ContactPage() {
               <ContactInfoCard 
                 icon={<Phone size={24} />}
                 title="Direct Call"
-                detail="+91 9711416627"
+                detail="+91 866 956 9686"
                 subDetail="Mon - Fri, 9am - 6pm"
                 type="phone"
               />
@@ -101,7 +101,7 @@ function ContactInfoCard({ icon, title, detail, subDetail, type }: ContactInfoCa
         {type === 'email' ? (
           <a href="mailto:info@syncvisionresearch.com">{icon}</a>
         ) : type === 'phone' ? (
-          <a href="tel:+919711416627">{icon}</a>
+          <a href="tel:+918669569686">{icon}</a>
         ) : (
           icon
         )}
@@ -117,7 +117,7 @@ function ContactInfoCard({ icon, title, detail, subDetail, type }: ContactInfoCa
         {type === 'email' ? (
           <a href="mailto:info@syncvisionresearch.com">{detail}</a>
         ) : type === 'phone' ? (
-          <a href="tel:+919711416627">{detail}</a>
+          <a href="tel:+918669569686">{detail}</a>
         ) : (
           detail
         )}

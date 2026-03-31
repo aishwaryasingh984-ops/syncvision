@@ -79,28 +79,38 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  /* --syncvision-green: #0A4D44;
-  --syncvision-gold: #FFBF3F;
-  --syncvision-teal: #125E54;
-  --syncvision-green-rgb: 10 77 68;
 
-  --syncvision-teal-rgb: 18 94 84; */
+  /* Primary Brand Palette from Logo/Card */
+  --syncvision-blue: #4A7EAB;        /* Background blue  */
+  --syncvision-blue-light: #6698BE;  /* Secondary/Hover blue  */
+  --syncvision-navy: #0D1B3E;        /* Main "SyncVision" text color [cite: 1, 4] */
+  --syncvision-navy-mid: #1B2D5E;    /* Banner/Accent color  */
+  
+  /* UI Neutrals */
+  --syncvision-white: #FFFFFF;       /* Primary text & QR background  */
+  --syncvision-ice: #D6E6F2;         /* Muted elements  */
+  --syncvision-bg-dark: #07101F;     /* Page backgrounds  */
+  --syncvision-text-main: #0D1B3E;
+  --syncvision-text-muted: #5B7392;
+  --syncvision-bg-light: #EAF2F8;
 
-  /* Primary brand colors */
-  --syncvision-green: #0A4D44;        
-  --syncvision-teal:  #125E54;     
-  --syncvision-background-teal: #40847c;   
-  --syncvision-gold:  #FFBF3F;       
+  /* RGB versions for Tailwind opacity utilities */
+  --syncvision-blue-rgb: 74 126 171;
+  --syncvision-navy-rgb: 13 27 62;
+  --syncvision-white-rgb: 255 255 255;
 
-  /* RGB versions (for opacity utilities) */
-  --syncvision-green-rgb: 10 77 68;
-  --syncvision-teal-rgb:  18 94 84;
-  --syncvision-gold-rgb:  255 191 63;
-
-  /* UI neutrals (recommended additions) */
-  --syncvision-bg-dark:   #050B0A;
-  --syncvision-text-main: #E6F2F0;
-  --syncvision-text-muted:#9FB8B4;
+  /* Legacy Aliases: Maps old names to new colors to prevent UI breakage */
+  --syncvision-green: var(--syncvision-navy);
+  --syncvision-teal: var(--syncvision-blue-light);
+  --syncvision-light-blue: var(--syncvision-blue-light);
+  --syncvision-background-teal: var(--syncvision-navy-mid);
+  --syncvision-accent-dark: var(--syncvision-navy-mid);
+  --syncvision-gold: var(--syncvision-blue-light);
+  
+  /* Legacy RGB Aliases */
+  --syncvision-green-rgb: 13 27 62;
+  --syncvision-teal-rgb: 102 152 190;
+  --syncvision-gold-rgb: 102 152 190;
 }
 
 .dark {
@@ -159,4 +169,3 @@ html {
     overscroll-behavior-x: none; 
   }
 }
-

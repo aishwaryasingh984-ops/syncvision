@@ -4,7 +4,7 @@ import { CheckCircle2, MapPin } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section className="bg-[#F7F9FB] pt-28 pb-16 md:pt-36 lg:py-24 overflow-hidden">
+    <section className="bg-[var(--syncvision-bg-light)] pt-28 pb-16 md:pt-36 lg:py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
         {/* LEFT: Content Mapping from your "About Us" and "Partner With Us" */}
@@ -15,14 +15,14 @@ export default function AboutSection() {
             </span>
             
             <h2 className="text-3xl md:text-5xl font-extrabold text-[var(--syncvision-green)] leading-tight mt-4 mb-6 tracking-tight">
-              Sync<span className="text-[var(--syncvision-gold)]">Vision</span> Research <br className="hidden md:block" /> Solution LLP
+              Sync<span className="">Vision</span> Research <br className="hidden md:block" /> Solution LLP
             </h2>
 
             <p className="text-lg md:text-xl font-medium text-[var(--syncvision-teal)] mb-6 border-l-4 border-[var(--syncvision-gold)] pl-4">
               “Where Vision Meets Integrity”
             </p>
 
-            <div className="space-y-6 text-slate-600 leading-relaxed text-sm md:text-base mb-10 font-light">
+            <div className="space-y-6 text-[var(--syncvision-text-muted)] leading-relaxed text-sm md:text-base mb-10 font-light">
               <p>
                 Headquartered in <span className="font-bold text-[var(--syncvision-green)]">Pune</span>, with a strong operational presence in <span className="font-bold text-[var(--syncvision-green)]">Thane</span> and <span className="font-bold text-[var(--syncvision-green)]">Patna</span>, we are a quality-focused Site Management Organization (SMO).
               </p>
@@ -32,7 +32,7 @@ export default function AboutSection() {
             </div>
 
             {/* Why Partner Grid - Updated with your "Why Partner With SyncVision?" points */}
-            <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100">
+            <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl shadow-[rgba(74,126,171,0.18)] border border-[var(--syncvision-blue-light)]/20">
               <h3 className="text-xl font-bold text-[var(--syncvision-green)] mb-6">
                 Why Partner With Us?
               </h3>
@@ -50,7 +50,7 @@ export default function AboutSection() {
                     </div>
                     <div>
                       <p className="text-[var(--syncvision-green)] font-bold text-sm uppercase tracking-wide">{item.t}</p>
-                      <p className="text-slate-500 text-sm mt-1">{item.d}</p>
+                      <p className="text-[var(--syncvision-text-muted)] text-sm mt-1">{item.d}</p>
                     </div>
                   </li>
                 ))}
@@ -71,7 +71,7 @@ export default function AboutSection() {
                   fill
                   className="object-cover transition duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--syncvision-green)]/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--syncvision-green)]/45 to-transparent" />
               </div>
 
               {/* Floating Presence Badge */}
@@ -80,7 +80,7 @@ export default function AboutSection() {
                   <MapPin className="w-5 h-5 text-[var(--syncvision-gold)]" />
                   <p className="font-bold text-sm tracking-widest uppercase">Our Reach</p>
                 </div>
-                <p className="text-white/80 text-xs leading-relaxed">
+                <p className="text-[var(--syncvision-ice)] text-xs leading-relaxed">
                   Pune • Thane • Patna
                 </p>
               </div>
@@ -96,7 +96,7 @@ export default function AboutSection() {
 // Refitted Vision/Mission Section
 export function MissionVisionSection() {
   return (
-    <section className="py-24 bg-[var(--syncvision-green)] text-white relative overflow-hidden">
+    <section className="py-24 bg-[var(--syncvision-green)] text-[var(--syncvision-ice)] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 relative z-10">
         <Reveal>
           <div className="border-l-4 border-[var(--syncvision-gold)] pl-8">

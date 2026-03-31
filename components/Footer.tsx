@@ -24,7 +24,7 @@ export default function Footer() {
               <Link href="/" className="relative block transition-transform duration-500 hover:scale-[1.02]">
                 <div className="relative w-full aspect-[3/1]">
                   <Image 
-                    src="/assets/SyncVisionLogoFooter.png" 
+                    src="/assets/SyncVisionLogoLatest.png" 
                     alt="SyncVision Logo" 
                     fill
                     className="object-contain" 

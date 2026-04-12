@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sync Vision Research Solution LLP",
-  description: "Sync Vision Research Solution LLP",
+  title: "SyncVision Research Solution LLP",
+  description: "SyncVision Research Solution LLP",
 };
 
 export default function RootLayout({

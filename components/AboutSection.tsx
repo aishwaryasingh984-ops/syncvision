@@ -4,8 +4,10 @@ import { CheckCircle2, MapPin } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section className="bg-[var(--syncvision-bg-light)] pt-28 pb-16 md:pt-36 lg:py-24 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+    <section className="relative bg-[var(--syncvision-bg-light)] pt-24 pb-16 md:pt-28 lg:py-24 overflow-hidden">
+      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[var(--syncvision-green)]/14 via-[var(--syncvision-gold)]/6 to-transparent pointer-events-none" />
+      <div className="absolute left-1/2 top-0 h-28 w-[min(92vw,72rem)] -translate-x-1/2 rounded-b-[3rem] bg-white/45 blur-3xl pointer-events-none" />
+      <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
         {/* LEFT: Content Mapping from your "About Us" and "Partner With Us" */}
         <div className="order-2 lg:order-1">

@@ -23,12 +23,14 @@ export function SpecialtyGrid() {
   return (
     /* Standardized Padding: Consistent with the Home/About sections 
        to ensure smooth scrolling on Nest Hub/Tablets. */
-    <section className="py-20 lg:py-24 bg-[#F7F9FB] relative overflow-hidden">
+    <section className="pt-20 pb-20 lg:pt-24 lg:pb-24 bg-[#F7F9FB] relative overflow-hidden">
+      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[var(--syncvision-green)]/14 via-[var(--syncvision-gold)]/6 to-transparent pointer-events-none" />
+      <div className="absolute left-1/2 top-0 h-28 w-[min(92vw,72rem)] -translate-x-1/2 rounded-b-[3rem] bg-white/45 blur-3xl pointer-events-none" />
       
       {/* Background Accent */}
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-syncvision-teal/5 rounded-full blur-3xl -z-10" />
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         
         {/* Section Header with Brand Signature */}
         <Reveal className="mb-12 md:mb-16">

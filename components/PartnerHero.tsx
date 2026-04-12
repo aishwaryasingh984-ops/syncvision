@@ -1,7 +1,6 @@
 "use client";
 
 import Reveal from "./Reveal";
-import { Handshake } from "lucide-react";
 
 export function PartnerHero() {
   return (
@@ -24,12 +23,12 @@ export function PartnerHero() {
               <span className="text-[10px] uppercase tracking-[0.3em] text-[var(--syncvision-gold)] font-bold">Strategic Collaborations</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold text-white leading-[1.1] tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl font-extrabold text-white leading-[1.1] tracking-tight">
               Advancing Research <br />
               <span className="text-[var(--syncvision-gold)]">With Integrity.</span>
             </h1>
 
-            <p className="mt-8 text-sm md:text-xl text-[#F7F9FB]/80 leading-relaxed font-light max-w-2xl">
+            <p className="mt-8 text-xs sm:text-sm md:text-base lg:text-lg text-[#F7F9FB]/80 leading-relaxed font-light max-w-2xl">
               Headquartered in Pune, with operations in Thane and Patna, we build transparent, ethical partnerships that accelerate clinical trial timelines across India.
             </p>
           </Reveal>

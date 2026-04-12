@@ -96,7 +96,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="mt-4 border-l-2 border-[var(--syncvision-gold)] pl-4 italic text-white/50 text-xs">
-                "Where Vision Meets Integrity"
+                &ldquo;Where Vision Meets Integrity&rdquo;
               </li>
             </ul>
           </div>

@@ -17,8 +17,10 @@ const coreServices = [
 
 export function CoreServicesGrid() {
   return (
-    <section className="py-24 lg:py-32 bg-[#F7F9FB] relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="pt-20 pb-24 lg:pt-24 lg:pb-32 bg-[#F7F9FB] relative overflow-hidden">
+      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[var(--syncvision-green)]/14 via-[var(--syncvision-gold)]/6 to-transparent pointer-events-none" />
+      <div className="absolute left-1/2 top-0 h-28 w-[min(92vw,72rem)] -translate-x-1/2 rounded-b-[3rem] bg-white/45 blur-3xl pointer-events-none" />
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         
         <Reveal className="mb-16">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">

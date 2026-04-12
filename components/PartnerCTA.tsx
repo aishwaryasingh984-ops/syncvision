@@ -9,10 +9,10 @@ export function PartnerCTA() {
       <Reveal>
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-extrabold text-[var(--syncvision-green)] mb-8">
-            Let's Advance <br className="sm:hidden" /> Research Together
+            Let&apos;s Advance <br className="sm:hidden" /> Research Together
           </h2>
           <p className="text-slate-600 text-lg mb-10 font-light italic">
-            "Connect with us to build research partnerships that accelerate timelines while upholding the highest ethical standards."
+            &ldquo;Connect with us to build research partnerships that accelerate timelines while upholding the highest ethical standards.&rdquo;
           </p>
           <a 
             href="mailto:info@syncvisionresearch.com"

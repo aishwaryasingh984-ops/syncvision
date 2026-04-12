@@ -30,17 +30,17 @@ export function CareersHero() {
         <div className="max-w-3xl">
           <Reveal>
             {/* Title: Reduced md: size to 5xl for better fit on Hub screens */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold leading-[1.1] text-white tracking-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] text-white tracking-tight">
               Join the <span className="text-[var(--syncvision-gold)]">SyncVision</span> Team
             </h1>
 
             {/* Tagline: Integrated "Vision Meets Integrity" theme */}
-            <h2 className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-[#F7F9FB] leading-snug border-l-4 border-[var(--syncvision-gold)] pl-4 italic">
+            <h2 className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl font-medium text-[#F7F9FB] leading-snug border-l-4 border-[var(--syncvision-gold)] pl-4 italic">
               “Where Vision Meets Integrity”
             </h2>
 
             {/* Description: Integrated Pune, Thane, Patna presence */}
-            <p className="mt-6 text-sm sm:text-base md:text-lg text-[#F7F9FB]/80 leading-relaxed max-w-2xl font-light">
+            <p className="mt-6 text-xs sm:text-sm md:text-base text-[#F7F9FB]/80 leading-relaxed max-w-2xl font-light">
               We are expanding our SMO network across <span className="text-white font-medium">Pune, Thane, and Patna</span>. We welcome motivated clinical research professionals to build their careers in a quality-driven environment.
             </p>
 

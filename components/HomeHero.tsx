@@ -23,18 +23,18 @@ export default function HomeHero() {
         <div className="max-w-3xl">
           <Reveal>
             {/* Title: Using md:text-5xl for Nest Hub compatibility */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold leading-[1.1] text-white tracking-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] text-white tracking-tight">
               Sync<span className="text-[var(--syncvision-gold)]">Vision</span> <br className="hidden sm:block" />
               Research Solution LLP
             </h1>
 
             {/* Sub-heading using your provided tagline and pillar content */}
-            <h2 className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-[#F7F9FB] leading-snug border-l-4 border-[var(--syncvision-gold)] pl-4 italic">
+            <h2 className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl font-medium text-[#F7F9FB] leading-snug border-l-4 border-[var(--syncvision-gold)] pl-4 italic">
                 “Where Vision Meets Integrity”
             </h2>
 
             {/* Description using your SMO site management text */}
-            <p className="mt-4 text-sm sm:text-base md:text-lg text-[#F7F9FB]/80 leading-relaxed max-w-2xl font-light">
+            <p className="mt-4 text-xs sm:text-sm md:text-base text-[#F7F9FB]/80 leading-relaxed max-w-2xl font-light">
               A quality-focused Site Management Organization (SMO) delivering ethical, 
               efficient, and high-quality clinical trial site management solutions 
               across India.

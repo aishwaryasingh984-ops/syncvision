@@ -1,17 +1,19 @@
 "use client";
 
-import { Target, Eye, Shield } from "lucide-react";
+import { Target, Eye } from "lucide-react";
 import Reveal from "./Reveal";
 
 export default function MissionVision() {
   return (
     // Standardized padding to align with zigzag flow and clear Navbars on Hubs
-    <section className="bg-[#F7F9FB] py-16 md:py-24 relative overflow-hidden">
+    <section className="bg-[#F7F9FB] pt-20 pb-16 md:pt-24 md:pb-24 relative overflow-hidden">
+      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[var(--syncvision-green)]/14 via-[var(--syncvision-gold)]/6 to-transparent pointer-events-none" />
+      <div className="absolute left-1/2 top-0 h-28 w-[min(92vw,72rem)] -translate-x-1/2 rounded-b-[3rem] bg-white/45 blur-3xl pointer-events-none" />
       
       {/* Decorative accent for the section background */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-syncvision-teal/5 rounded-full blur-3xl -z-10" />
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         
         {/* Three Pillars Header - Integrated from your "Our Approach" text */}
         <Reveal className="mb-12 lg:mb-16">

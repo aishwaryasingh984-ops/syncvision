@@ -24,8 +24,10 @@ export default function ContactPage() {
       <ContactHero />
 
       {/* Info Cards Section: Standardized spacing to match Zigzag sections */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="relative pt-20 pb-16 md:pt-24 md:pb-24 overflow-hidden">
+        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[var(--syncvision-green)]/14 via-[var(--syncvision-gold)]/6 to-transparent pointer-events-none" />
+        <div className="absolute left-1/2 top-0 h-28 w-[min(92vw,72rem)] -translate-x-1/2 rounded-b-[3rem] bg-white/45 blur-3xl pointer-events-none" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             <Reveal>
               <ContactInfoCard 

@@ -39,12 +39,12 @@ export default function ContactHero() {
         {/* Left Column */}
         <div className="text-left max-w-3xl order-1">
           <Reveal>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold leading-[1.1] text-white tracking-tight">
-              Let's execute <br className="hidden sm:block" />
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] text-white tracking-tight">
+              Let&apos;s execute <br className="hidden sm:block" />
               <span className="text-[var(--syncvision-gold)]">Better Trials.</span>
             </h1>
 
-            <h2 className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-[#F7F9FB] leading-snug border-l-4 border-[var(--syncvision-gold)] pl-4">
+            <h2 className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl font-medium text-[#F7F9FB] leading-snug border-l-4 border-[var(--syncvision-gold)] pl-4">
                 Partner with SyncVision
             </h2>
 

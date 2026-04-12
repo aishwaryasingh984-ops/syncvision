@@ -33,8 +33,10 @@ const benefits = [
 
 export function WhyPartner() {
   return (
-    <section className="py-20 bg-[#F7F9FB]">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="relative pt-20 pb-20 bg-[#F7F9FB] overflow-hidden">
+      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[var(--syncvision-green)]/14 via-[var(--syncvision-gold)]/6 to-transparent pointer-events-none" />
+      <div className="absolute left-1/2 top-0 h-28 w-[min(92vw,72rem)] -translate-x-1/2 rounded-b-[3rem] bg-white/45 blur-3xl pointer-events-none" />
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <Reveal className="mb-16">
           <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--syncvision-green)] border-l-4 border-[var(--syncvision-gold)] pl-6">
             Why Partner With <span className="text-[var(--syncvision-teal)]">SyncVision?</span>

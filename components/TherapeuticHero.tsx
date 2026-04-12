@@ -30,19 +30,19 @@ export function TherapeuticHero() {
         <div className="max-w-3xl">
           <Reveal>
             {/* Title: Using Gold highlight for the keyword "Expertise" */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold leading-[1.1] text-white tracking-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] text-white tracking-tight">
               Therapeutic <br className="hidden sm:block" />
               <span className="text-[var(--syncvision-gold)]">Expertise</span>
             </h1>
 
             {/* Tagline: Emphasizing the medical specialty focus */}
-            <h2 className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-[#F7F9FB] leading-snug border-l-4 border-[var(--syncvision-gold)] pl-4">
+            <h2 className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl font-medium text-[#F7F9FB] leading-snug border-l-4 border-[var(--syncvision-gold)] pl-4">
               Deep Protocol Understanding <br className="hidden sm:block" />
               <span className="text-white italic">Across Medical Specialties</span>
             </h2>
 
             {/* Description: High-contrast off-white for medical professionalism */}
-            <p className="mt-6 text-sm sm:text-base md:text-lg text-[#F7F9FB]/80 leading-relaxed max-w-2xl font-light">
+            <p className="mt-6 text-xs sm:text-sm md:text-base text-[#F7F9FB]/80 leading-relaxed max-w-2xl font-light">
               SyncVision collaborates with seasoned Principal Investigators in <span className="text-white font-medium">Pune, Thane, and Patna</span>, 
               ensuring reliable patient recruitment and high-quality data through 
               focused operational excellence.

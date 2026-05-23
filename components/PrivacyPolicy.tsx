@@ -3,19 +3,18 @@ import Reveal from "./Reveal";
 
 export default function PrivacyPage() {
   return (
-    // Updated background to Off-white (#F7F9FB)
-    <main className="relative min-h-[90vh] flex flex-col bg-[#F7F9FB]">
+    <main className="relative min-h-[90vh] flex flex-col bg-[var(--sv-teal-20)]">
       
       {/* HEADER SECTION: Synchronized with SyncVision Green (#0A4D44) */}
-      <section className="relative h-[40vh] md:h-[50vh] flex items-center overflow-hidden bg-[var(--syncvision-green)]">
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--syncvision-green)] via-syncvision-green/95 to-syncvision-teal/70" />
+      <section className="relative h-[40vh] md:h-[50vh] flex items-center overflow-hidden bg-[var(--sv-teal)]">
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--sv-teal)] via-[var(--sv-teal)]/95 to-[var(--sv-blue)]/70" />
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
           <Reveal>
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-[1.2] text-white tracking-tight">
-              Privacy<span className="text-[var(--syncvision-gold)]">Policy</span>
+              Privacy<span className="text-[var(--sv-green)]">Policy</span>
             </h1>
-            <div className="mt-4 h-1 w-20 bg-[var(--syncvision-gold)]" />
+            <div className="mt-4 h-1 w-20 bg-[var(--sv-green)]" />
           </Reveal>
         </div>
       </section>
@@ -26,20 +25,20 @@ export default function PrivacyPage() {
           
           {/* Sidebar - Legal Labeling */}
           <div className="lg:col-span-4">
-            <h2 className="text-sm font-bold uppercase tracking-widest text-[var(--syncvision-teal)]">
+            <h2 className="text-sm font-bold uppercase tracking-widest text-[var(--sv-blue)]">
               Compliance & Legal
             </h2>
-            <p className="mt-2 text-[var(--syncvision-gold)]/60 text-sm">
+            <p className="mt-2 text-[var(--sv-green)]/60 text-sm">
               Last updated: February 2026
             </p>
           </div>
 
           {/* Main Legal Content */}
-          <div className="lg:col-span-8 space-y-10 text-[var(--syncvision-gold)]/80 leading-relaxed">
+          <div className="lg:col-span-8 space-y-10 text-[var(--sv-green)]/80 leading-relaxed">
             <Reveal>
               <div className="space-y-8">
                 <section>
-                  <h3 className="text-xl font-bold text-[var(--syncvision-gold)] mb-3 uppercase tracking-tight">1. Data Collection</h3>
+                  <h3 className="text-xl font-bold text-[var(--sv-green)] mb-3 uppercase tracking-tight">1. Data Collection</h3>
                   <p>
                     SyncVision Research Solution LLP collects information necessary to facilitate clinical 
                     trial site management. This includes professional contact details and regulatory 
@@ -48,7 +47,7 @@ export default function PrivacyPage() {
                 </section>
 
                 <section>
-                  <h3 className="text-xl font-bold text-[var(--syncvision-gold)] mb-3 uppercase tracking-tight">2. Purpose of Processing</h3>
+                  <h3 className="text-xl font-bold text-[var(--sv-green)] mb-3 uppercase tracking-tight">2. Purpose of Processing</h3>
                   <p>
                     We process your data exclusively for operational efficiency in site management, 
                     ensuring that all clinical research activities meet global quality standards.
@@ -56,8 +55,8 @@ export default function PrivacyPage() {
                 </section>
 
                 {/* Highlighted Section using Gold Accent */}
-                <section className="p-6 bg-[var(--syncvision-green)]/5 border-l-4 border-[var(--syncvision-gold)] rounded-r-lg">
-                  <h3 className="text-xl font-bold text-[var(--syncvision-gold)] mb-2 uppercase tracking-tight">3. Data Security</h3>
+                <section className="p-6 bg-[var(--sv-teal)]/5 border-l-4 border-[var(--sv-green)] rounded-r-lg">
+                  <h3 className="text-xl font-bold text-[var(--sv-green)] mb-2 uppercase tracking-tight">3. Data Security</h3>
                   <p>
                     We implement strict technical and organizational measures to protect sensitive 
                     research data against unauthorized access or disclosure.

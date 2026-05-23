@@ -1,6 +1,5 @@
 import Navbar from '@/components/Navbar';
 import HomeHero from '@/components/HomeHero';
-import Services from '@/components/Services';
 import AboutSection from '@/components/AboutSection'
 import OncologySection from '@/components/OncologySection';
 import ExperienceSection from '@/components/ExperienceSection';

@@ -8,48 +8,47 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   const location = "Wellington, Pride World City, Charholi Budruk, Pune, Maharashtra 412105";
   const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(location)}&output=embed`;
+  const footerLogo = "/assets/logo-full-tagline-plain.jpeg";
+
+  const footerLinks = [
+    { href: "/about", label: "About Us" },
+    { href: "/services", label: "Our Services" },
+    { href: "/partner", label: "Partner With Us" },
+    { href: "/contact", label: "Contact" },
+  ];
+
+  const socialLinks = [
+    { Icon: Linkedin, label: "LinkedIn", color: "hover:bg-[#0077B5] hover:text-white" },
+    { Icon: Twitter, label: "Twitter", color: "hover:bg-[#1DA1F2] hover:text-white" },
+    { Icon: Facebook, label: "Facebook", color: "hover:bg-[#1877F2] hover:text-white" },
+    { Icon: Instagram, label: "Instagram", color: "hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-white" },
+  ];
 
   return (
-    /* Fixed Padding: Increased pt to ensure separation from content on short screens */
-    <footer className="bg-[var(--syncvision-green)] text-white pt-20 lg:pt-24 pb-10 border-t border-white/5 relative overflow-hidden">
-      
+    <footer
+      className="relative overflow-hidden border-t border-white/10 pt-12 pb-7 text-white"
+      style={{ backgroundColor: "var(--sv-teal-dark)" }}
+    >
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-12 mb-16 items-start">
-          
-          {/* Column 1: Brand Card - Left Aligned on Mobile per HomeHero Reference */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-[1.15fr_0.72fr_0.7fr_1fr_1.25fr] lg:gap-9 items-start">
           <div className="flex flex-col items-start">
-          <div className="group bg-white rounded-3xl p-6 mb-8 border border-white/10 
-            shadow-[0_12px_32px_rgba(16,185,129,0.25)]
-            transition-all duration-500 w-full max-w-[280px]">
-              <Link href="/" className="relative block transition-transform duration-500 hover:scale-[1.02]">
-                <div className="relative w-full aspect-[3/1]">
-                  <Image 
-                    src="/assets/SyncVisionLogoLatest.png" 
-                    alt="SyncVision Logo" 
-                    fill
-                    className="object-contain" 
-                    priority
-                  />
-                </div>
-              </Link>
+            <div className="relative mb-5 h-28 w-full max-w-[260px]">
+              <Image
+                src={footerLogo}
+                alt="SyncVision Research Solutions LLP"
+                fill
+                className="object-contain object-left mix-blend-multiply"
+                priority
+              />
             </div>
-            
-            {/* <p className="text-white/70 text-sm leading-relaxed mb-6 font-light max-w-xs">
-              Delivering ethical, efficient, and quality-driven clinical trial site management solutions across India.
-            </p> */}
 
             <div className="flex gap-3">
-              {[
-                { Icon: Linkedin, label: "LinkedIn", color: "hover:bg-[#0077B5]" },
-                { Icon: Twitter, label: "Twitter", color: "hover:bg-[#1DA1F2]" },
-                { Icon: Facebook, label: "Facebook", color: "hover:bg-[#1877F2]" },
-                { Icon: Instagram, label: "Instagram", color: "hover:bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]" },
-              ].map(({ Icon, label, color }, idx) => (
-                <Link 
-                  key={idx}
-                  href="#" 
+              {socialLinks.map(({ Icon, label, color }) => (
+                <Link
+                  key={label}
+                  href="#"
                   aria-label={label}
-                  className={`p-2 rounded-xl bg-white/5 border border-white/10 text-white/60 transition-all duration-300 hover:-translate-y-1 hover:text-white ${color} shadow-md`}
+                  className={`rounded-xl border border-white/10 bg-white/5 p-2 text-white/70 transition-all duration-300 hover:-translate-y-1 ${color}`}
                 >
                   <Icon className="w-5 h-5" />
                 </Link>
@@ -57,76 +56,81 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Quick Links - Left Aligned */}
           <div className="text-left">
-            <h4 className="text-base font-bold mb-8 text-[var(--syncvision-gold)] uppercase tracking-widest">Quick Links</h4>
-            <ul className="space-y-4 text-white/80 text-sm font-light">
-              <li><Link href="/about" className="hover:text-[var(--syncvision-gold)] transition-colors">About Us</Link></li>
-              <li><Link href="/services" className="hover:text-[var(--syncvision-gold)] transition-colors">Our Services</Link></li>
-              <li><Link href="/partner" className="hover:text-[var(--syncvision-gold)] transition-colors">Partner With Us</Link></li>
-              <li><Link href="/contact" className="hover:text-[var(--syncvision-gold)] transition-colors">Contact</Link></li>
+            <h4 className="mb-5 text-sm font-black uppercase tracking-widest text-[var(--sv-green)]">Quick Links</h4>
+            <ul className="space-y-3 text-sm font-medium">
+              {footerLinks.map(({ href, label }) => (
+                <li key={href}>
+                  <Link href={href}
+                    className="text-white/75 transition-colors hover:text-[var(--sv-green-light)]">
+                    {label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Column 3: Presence - Updated with your Content */}
           <div className="text-left">
-            <h4 className="text-base font-bold mb-8 text-[var(--syncvision-gold)] uppercase tracking-widest">Presence</h4>
-            <ul className="space-y-4 text-white/80 text-sm font-light">
-              <li className="flex items-center gap-3"><MapPin className="w-4 h-4 text-[var(--syncvision-gold)]" /> Pune (HQ)</li>
-              <li className="flex items-center gap-3"><MapPin className="w-4 h-4 text-[var(--syncvision-gold)]" /> Thane</li>
-              <li className="flex items-center gap-3"><MapPin className="w-4 h-4 text-[var(--syncvision-gold)]" /> Patna</li>
-              <li className="pt-2 italic text-[var(--syncvision-gold)]/80 font-medium">Pan-India Support</li>
+            <h4 className="mb-5 text-sm font-black uppercase tracking-widest text-[var(--sv-green)]">Presence</h4>
+            <ul className="space-y-3 text-sm font-medium text-white/75">
+              {["Pune (HQ)", "Thane", "Patna"].map((city) => (
+                <li key={city} className="flex items-center gap-3">
+                  <MapPin className="w-4 h-4 flex-shrink-0 text-[var(--sv-blue-light)]" />
+                  {city}
+                </li>
+              ))}
+              <li className="pt-1 font-bold italic text-[var(--sv-green-light)]">
+                Pan-India Support
+              </li>
             </ul>
           </div>
 
-          {/* Column 4: Contact - Using your specific Email/Phone */}
           <div className="text-left">
-            <h4 className="text-base font-bold mb-8 text-[var(--syncvision-gold)] uppercase tracking-widest">Contact Us</h4>
-            <ul className="space-y-6 text-white text-sm font-light">
-              <li className="flex items-start gap-4 group">
-                <Mail className="w-5 h-5 text-[var(--syncvision-gold)] flex-shrink-0 mt-0.5" />
-                <a href="mailto:info@syncvisionresearch.com" className="text-white/80 hover:text-white transition-colors break-all">
+            <h4 className="mb-5 text-sm font-black uppercase tracking-widest text-[var(--sv-green)]">Contact Us</h4>
+            <ul className="space-y-4 text-sm font-medium text-white/75">
+              <li className="flex items-start gap-4">
+                <Mail className="w-5 h-5 flex-shrink-0 mt-0.5 text-[var(--sv-blue-light)]" />
+                <a href="mailto:info@syncvisionresearch.com"
+                  className="break-all transition-colors hover:text-[var(--sv-green-light)]">
                   info@syncvisionresearch.com
                 </a>
               </li>
-              <li className="flex items-start gap-4 group">
-                <Phone className="w-5 h-5 text-[var(--syncvision-gold)] flex-shrink-0 mt-0.5" />
-                <a href="tel:+918669569686">
-                <span className="text-white/80">+91 866 956 9686</span>
+              <li className="flex items-start gap-4">
+                <Phone className="w-5 h-5 flex-shrink-0 mt-0.5 text-[var(--sv-blue-light)]" />
+                <a href="tel:+918669569686" className="transition-colors hover:text-[var(--sv-green-light)]">
+                  +91 866 956 9686
                 </a>
               </li>
-              <li className="mt-4 border-l-2 border-[var(--syncvision-gold)] pl-4 italic text-white/50 text-xs">
+              <li className="mt-3 border-l-2 border-[var(--sv-green)] pl-4 text-xs italic text-white/60">
                 &ldquo;Where Vision Meets Integrity&rdquo;
               </li>
             </ul>
           </div>
-        </div>
 
-        {/* Column 5: Location Map */}
-        <div className="text-left">
-          <h4 className="text-base font-bold mb-8 text-[var(--syncvision-gold)] uppercase tracking-widest">
-            Our Location
-          </h4>
-
-          <div className="w-full h-[400px] rounded-xl overflow-hidden border border-white/10 shadow-lg">
-            <iframe
-              src={mapSrc}
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+          <div className="w-full text-left lg:justify-self-end">
+            <h4 className="mb-4 text-sm font-black uppercase tracking-widest text-[var(--sv-green)]">
+              Our Location
+            </h4>
+            <div className="h-[185px] w-full overflow-hidden rounded-xl border border-white/10">
+              <iframe
+                title="SyncVision Research Solutions LLP location"
+                src={mapSrc}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
         </div>
 
-        {/* Bottom Bar: Correct Year & Mobile Optimized */}
-        <div className="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-white/40 text-[9px] sm:text-[10px] uppercase tracking-[0.2em] font-bold">
+        <div className="mt-8 flex flex-col items-center justify-between gap-5 border-t border-white/10 pt-6 text-[9px] font-bold uppercase tracking-[0.2em] text-white/45 sm:text-[10px] md:flex-row">
           <p>© {currentYear} SyncVision Research Solution LLP. All Rights Reserved.</p>
           <div className="flex gap-8">
-            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
+            <Link href="/privacy" className="transition-colors hover:text-[var(--sv-green-light)]">Privacy Policy</Link>
+            <Link href="/terms" className="transition-colors hover:text-[var(--sv-green-light)]">Terms</Link>
           </div>
         </div>
       </div>

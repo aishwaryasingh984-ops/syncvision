@@ -4,10 +4,10 @@ import React, { useState } from "react";
 import { Send, CheckCircle2 } from "lucide-react";
 
 export default function ContactForm() {
-  const btnBase = "cursor-pointer w-full inline-flex justify-center items-center rounded-full px-8 py-3 md:py-4 text-sm font-bold transition-all duration-300 shadow-lg border-2 border-[var(--syncvision-gold)]";
+  const btnBase = "cursor-pointer w-full inline-flex justify-center items-center rounded-full px-8 py-3 md:py-4 text-sm font-bold transition-all duration-300 shadow-lg border-2 border-[var(--sv-green)]";
 
   // Main Form Action Style
-  const btnPrimary = `${btnBase} bg-[var(--syncvision-gold)] text-[var(--syncvision-green)] hover:bg-[var(--syncvision-teal)] hover:text-white`;
+  const btnPrimary = `${btnBase} bg-[var(--sv-green)] text-[var(--sv-teal)] hover:bg-[var(--sv-blue)] hover:text-white`;
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -32,7 +32,7 @@ export default function ContactForm() {
       } else {
         setError("Error. Please try again.");
       }
-    } catch (err) {
+    } catch {
       setError("Server connection failed.");
     } finally {
       setIsSubmitting(false);
@@ -42,12 +42,12 @@ export default function ContactForm() {
   if (submitted) {
     return (
       <div className="flex flex-col items-center justify-center py-12 text-center animate-in fade-in zoom-in duration-500">
-        <div className="w-20 h-20 bg-[var(--syncvision-green)] text-[var(--syncvision-gold)] rounded-full flex items-center justify-center mb-6 shadow-xl">
+        <div className="w-20 h-20 bg-[var(--sv-teal)] text-[var(--sv-green)] rounded-full flex items-center justify-center mb-6 shadow-xl">
           <CheckCircle2 className="w-10 h-10" />
         </div>
-        <h3 className="text-2xl font-black text-[var(--syncvision-green)] mb-2">Message Sent!</h3>
+        <h3 className="text-2xl font-black text-[var(--sv-teal)] mb-2">Message Sent!</h3>
         <p className="text-slate-500 text-sm max-w-xs">Our clinical team has received your inquiry and will respond within 24 hours.</p>
-        <button onClick={() => setSubmitted(false)} className="mt-8 text-xs font-black text-[var(--syncvision-gold)] bg-[var(--syncvision-green)] px-6 py-2 rounded-full uppercase tracking-widest hover:scale-105 transition-all">
+        <button onClick={() => setSubmitted(false)} className="mt-8 text-xs font-black text-[var(--sv-green)] bg-[var(--sv-teal)] px-6 py-2 rounded-full uppercase tracking-widest hover:scale-105 transition-all">
           New Message
         </button>
       </div>
@@ -55,7 +55,7 @@ export default function ContactForm() {
   }
 
   // Input styles for white background
-  const inputBase = "w-full px-4 py-3 bg-[#F7F9FB] border border-slate-200 text-[var(--syncvision-green)] rounded-xl outline-none focus:border-[var(--syncvision-teal)] focus:bg-white transition-all placeholder:text-slate-400 text-sm font-medium";
+  const inputBase = "w-full px-4 py-3 bg-[var(--sv-teal-20)] border border-slate-200 text-[var(--sv-teal)] rounded-xl outline-none focus:border-[var(--sv-blue)] focus:bg-white transition-all placeholder:text-slate-400 text-sm font-medium";
   const labelBase = "text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 ml-1";
 
   return (
@@ -98,7 +98,7 @@ export default function ContactForm() {
         className={btnPrimary}
       >
         {isSubmitting ? (
-          <div className="w-5 h-5 border-2 border-[var(--syncvision-green)]/30 border-t-[var(--syncvision-green)] rounded-full animate-spin" />
+          <div className="w-5 h-5 border-2 border-[var(--sv-teal)]/30 border-t-[var(--sv-teal)] rounded-full animate-spin" />
         ) : (
           <div className="flex items-center gap-3">
             <Send className="w-4 h-4" /> 

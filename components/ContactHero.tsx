@@ -10,17 +10,17 @@ const ContactForm = dynamic(() => import("./ContactForm"), {
       <div className="h-12 bg-white/10 rounded-xl"></div>
       <div className="h-12 bg-white/10 rounded-xl"></div>
       <div className="h-32 bg-white/10 rounded-xl"></div>
-      <div className="h-12 bg-[var(--syncvision-gold)]/20 rounded-xl w-full"></div>
+      <div className="h-12 bg-[var(--sv-green)]/20 rounded-xl w-full"></div>
     </div>
   ),
 });
 
 export default function ContactHero() {
   return (
-    /* FIXED VIEWPORT: min-h-[100svh] ensures no cutoff on Nest Hub.
-       FIXED PADDING: pt-28/md:pt-36 clears the Navbar on mid-sized landscape screens.
+    /* FIXED VIEWPORT: shorter mobile height keeps phone hero sections compact.
+       FIXED PADDING: pt-24/md:pt-36 clears the Navbar across breakpoints.
     */
-    <section className="relative min-h-[100svh] lg:min-h-[90vh] flex flex-col lg:flex-row items-center bg-[var(--syncvision-green)] text-white pt-28 pb-16 md:pt-36 lg:pt-12 lg:pb-0 overflow-hidden">
+    <section className="relative min-h-[72svh] sm:min-h-[78svh] md:min-h-[100svh] lg:min-h-[90vh] flex flex-col lg:flex-row items-center bg-[var(--sv-teal)] text-white pt-24 pb-10 md:pt-36 md:pb-16 lg:pt-12 lg:pb-0 overflow-hidden">
       
       {/* Background Decoration */}
       {/* <div className="absolute top-0 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#125E54]/20 rounded-full blur-[80px] md:blur-[120px] -z-0 translate-x-1/3 -translate-y-1/3" /> */}
@@ -29,8 +29,8 @@ export default function ContactHero() {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('assets/contact-background.png')" }}
       />
-      <div className="absolute inset-0 bg-[var(--syncvision-background-teal)]/60" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[var(--syncvision-background-teal)] via-[rgb(var(--syncvision-teal-rgb)_/_0.8)] to-transparent lg:via-[rgb(var(--syncvision-teal-rgb)_/_0.6)]" />
+      <div className="absolute inset-0 bg-[var(--sv-teal-mid)]/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[var(--sv-teal-mid)] via-[rgb(var(--sv-blue-rgb)_/_0.8)] to-transparent lg:via-[rgb(var(--sv-blue-rgb)_/_0.6)]" />
 
       {/* contact-background.png */}
       
@@ -41,14 +41,14 @@ export default function ContactHero() {
           <Reveal>
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] text-white tracking-tight">
               Let&apos;s execute <br className="hidden sm:block" />
-              <span className="text-[var(--syncvision-gold)]">Better Trials.</span>
+              <span className="text-[var(--sv-green)]">Better Trials.</span>
             </h1>
 
-            <h2 className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl font-medium text-[#F7F9FB] leading-snug border-l-4 border-[var(--syncvision-gold)] pl-4">
+            <h2 className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl font-medium text-[var(--sv-white)] leading-snug border-l-4 border-[var(--sv-green)] pl-4">
                 Partner with SyncVision
             </h2>
 
-            <p className="mt-4 text-xs sm:text-sm md:text-base lg:text-lg text-[#F7F9FB]/70 leading-relaxed max-w-xl font-light">
+            <p className="mt-4 text-xs sm:text-sm md:text-base lg:text-lg text-[var(--sv-white)]/70 leading-relaxed max-w-xl font-light">
               Reliable, ICH-GCP compliant site management tailored to your clinical study needs. Reach out to our regional hubs in Pune, Thane, or Patna.
             </p>
             
@@ -58,7 +58,7 @@ export default function ContactHero() {
                </p>
                <a 
                  href="mailto:info@syncvisionresearch.com" 
-                 className="text-lg sm:text-xl md:text-2xl font-light text-[var(--syncvision-gold)] hover:text-white transition-colors break-all"
+                 className="text-lg sm:text-xl md:text-2xl font-light text-[var(--sv-green)] hover:text-white transition-colors break-all"
                >
                   info@syncvisionresearch.com
                </a>
@@ -78,16 +78,16 @@ export default function ContactHero() {
         <div className="order-2 w-full max-w-xl lg:max-w-none pb-10 lg:pb-0">
           <Reveal>
             {/* Switched to Solid White for maximum visibility */}
-            <div className="bg-white p-6 sm:p-10 rounded-[1rem] border border-slate-100 shadow-2xl shadow-[var(--syncvision-green)]/20 relative overflow-hidden">
+            <div className="bg-white p-6 sm:p-10 rounded-[1rem] border border-slate-100 shadow-2xl shadow-[var(--sv-teal)]/20 relative overflow-hidden">
               {/* Subtle brand accent line at the top */}
-              {/* <div className="absolute top-0 left-0 right-0 h-2 bg-[var(--syncvision-gold)]" /> */}
+              {/* <div className="absolute top-0 left-0 right-0 h-2 bg-[var(--sv-green)]" /> */}
               <ContactForm />
             </div>
           </Reveal>
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[var(--syncvision-green)] to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[var(--sv-teal)] to-transparent pointer-events-none" />
     </section>
   );
 }

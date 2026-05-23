@@ -48,8 +48,8 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: rgba(23,114,109,0.20);
+  --foreground: #0e4d49;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -80,37 +80,79 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  /* Primary Brand Palette from Logo/Card */
-  --syncvision-blue: #4A7EAB;        /* Background blue  */
-  --syncvision-blue-light: #6698BE;  /* Secondary/Hover blue  */
-  --syncvision-navy: #0D1B3E;        /* Main "SyncVision" text color [cite: 1, 4] */
-  --syncvision-navy-mid: #1B2D5E;    /* Banner/Accent color  */
-  
-  /* UI Neutrals */
-  --syncvision-white: #FFFFFF;       /* Primary text & QR background  */
-  --syncvision-ice: #D6E6F2;         /* Muted elements  */
-  --syncvision-bg-dark: #07101F;     /* Page backgrounds  */
-  --syncvision-text-main: #0D1B3E;
-  --syncvision-text-muted: #5B7392;
-  --syncvision-bg-light: #EAF2F8;
+  /* ═══════════════════════════════════════════════════════
+     NEW SYNCVISION BRAND PALETTE
+     Background Base : #17726d  (teal-green)
+     Logo Green      : #a4d376  (lime-green accent)
+     Blue            : #4c7bc1  (corporate blue)
+  ═══════════════════════════════════════════════════════ */
 
-  /* RGB versions for Tailwind opacity utilities */
-  --syncvision-blue-rgb: 74 126 171;
-  --syncvision-navy-rgb: 13 27 62;
-  --syncvision-white-rgb: 255 255 255;
+  /* ── Core Brand ── */
+  --sv-teal:          #17726d;          /* primary brand teal-green */
+  --sv-teal-20:       rgba(23,114,109,0.20);  /* teal @ 20% – background wash */
+  --sv-teal-40:       rgba(23,114,109,0.40);
+  --sv-teal-60:       rgba(23,114,109,0.60);
+  --sv-teal-80:       rgba(23,114,109,0.80);
+  --sv-teal-95:       rgba(23,114,109,0.95);
 
-  /* Legacy Aliases: Maps old names to new colors to prevent UI breakage */
-  --syncvision-green: var(--syncvision-navy);
-  --syncvision-teal: var(--syncvision-blue-light);
-  --syncvision-light-blue: var(--syncvision-blue-light);
-  --syncvision-background-teal: var(--syncvision-navy-mid);
-  --syncvision-accent-dark: var(--syncvision-navy-mid);
-  --syncvision-gold: var(--syncvision-blue-light);
-  
-  /* Legacy RGB Aliases */
-  --syncvision-green-rgb: 13 27 62;
-  --syncvision-teal-rgb: 102 152 190;
-  --syncvision-gold-rgb: 102 152 190;
+  /* Shades of teal (darker → lighter) */
+  --sv-teal-dark:     #0e4d49;          /* 30% darker – deep headers */
+  --sv-teal-mid:      #135e5a;          /* 15% darker – nav bg on scroll */
+  --sv-teal-light:    #1e9990;          /* 15% lighter – hover accents */
+  --sv-teal-pale:     #d0ecea;          /* very pale teal – section wash */
+
+  /* ── Logo Green (lime accent) ── */
+  --sv-green:         #a4d376;          /* primary accent – CTAs, highlights */
+  --sv-green-dark:    #7db84f;          /* 20% darker – pressed states */
+  --sv-green-mid:     #8eca5e;          /* hover */
+  --sv-green-light:   #c5e6a2;          /* lighter tint */
+  --sv-green-pale:    #edf7e4;          /* section background accent */
+
+  /* ── Blue ── */
+  --sv-blue:          #4c7bc1;          /* secondary brand blue */
+  --sv-blue-dark:     #345a9a;          /* darker shade – active states */
+  --sv-blue-mid:      #3d6bb0;          /* slightly darker */
+  --sv-blue-light:    #6e97d1;          /* lighter – hover */
+  --sv-blue-pale:     #dce8f5;          /* tint backgrounds */
+
+  /* ── RGB raw values (for opacity utilities) ── */
+  --sv-teal-rgb:      23 114 109;
+  --sv-green-rgb:     164 211 118;
+  --sv-blue-rgb:      76 123 193;
+
+  /* ── Neutrals ── */
+  --sv-white:         #FFFFFF;
+  --sv-ice:           #e8f4f3;          /* near-white teal tint */
+  --sv-text-on-dark:  #f0f8f7;          /* body text on dark backgrounds */
+  --sv-text-muted:    rgba(14,77,73,0.72);
+
+  /* ═══════════════════════════════════════════════════════
+     LEGACY ALIASES – keeps all existing components working
+     without touching a single className
+  ═══════════════════════════════════════════════════════ */
+  --syncvision-blue:              var(--sv-blue);
+  --syncvision-blue-light:        var(--sv-blue-light);
+  --syncvision-navy:              var(--sv-teal-dark);
+  --syncvision-navy-mid:          var(--sv-teal-mid);
+  --syncvision-white:             var(--sv-white);
+  --syncvision-ice:               var(--sv-ice);
+  --syncvision-bg-dark:           var(--sv-teal-dark);
+  --syncvision-text-main:         var(--sv-teal-dark);
+  --syncvision-text-muted:        var(--sv-text-muted);
+  --syncvision-bg-light:          var(--sv-teal-pale);
+
+  /* The three most-used semantic aliases */
+  --syncvision-green:             var(--sv-teal);          /* primary dark bg  */
+  --syncvision-teal:              var(--sv-blue);          /* secondary accent  */
+  --syncvision-gold:              var(--sv-green);         /* highlight / CTA  */
+  --syncvision-light-blue:        var(--sv-blue-light);
+  --syncvision-background-teal:   var(--sv-teal-mid);
+  --syncvision-accent-dark:       var(--sv-teal-mid);
+
+  /* RGB legacy */
+  --syncvision-green-rgb:         var(--sv-teal-rgb);
+  --syncvision-teal-rgb:          var(--sv-blue-rgb);
+  --syncvision-gold-rgb:          var(--sv-green-rgb);
 }
 
 .dark {
@@ -160,12 +202,10 @@ html {
   scroll-behavior: smooth;
 }
 
-/* globals.css */
 @layer base {
   html, body {
     max-width: 100vw;
     overflow-x: hidden;
-    /* Prevents the 'bounce' effect on mobile which can reveal horizontal gaps */
-    overscroll-behavior-x: none; 
+    overscroll-behavior-x: none;
   }
 }

@@ -33,13 +33,13 @@ const benefits = [
 
 export function WhyPartner() {
   return (
-    <section className="relative pt-20 pb-20 bg-[#F7F9FB] overflow-hidden">
-      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[var(--syncvision-green)]/14 via-[var(--syncvision-gold)]/6 to-transparent pointer-events-none" />
+    <section className="relative pt-20 pb-20 bg-[var(--sv-teal-20)] overflow-hidden">
+      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[var(--sv-teal)]/14 via-[var(--sv-green)]/6 to-transparent pointer-events-none" />
       <div className="absolute left-1/2 top-0 h-28 w-[min(92vw,72rem)] -translate-x-1/2 rounded-b-[3rem] bg-white/45 blur-3xl pointer-events-none" />
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <Reveal className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--syncvision-green)] border-l-4 border-[var(--syncvision-gold)] pl-6">
-            Why Partner With <span className="text-[var(--syncvision-teal)]">SyncVision?</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--sv-teal)] border-l-4 border-[var(--sv-green)] pl-6">
+            Why Partner With <span className="text-[var(--sv-blue)]">SyncVision?</span>
           </h2>
         </Reveal>
 
@@ -47,16 +47,16 @@ export function WhyPartner() {
   {benefits.map((item, i) => (
     <Reveal key={i} delay={i * 100}>
       <div className="bg-white p-8 rounded-[2rem] border border-slate-100 
-                  hover:border-[var(--syncvision-gold)]/30 
+                  hover:border-[var(--sv-green)]/30 
                   shadow-sm 
                   hover:shadow-xl 
-                  hover:shadow-[0_20px_40px_rgba(10,77,68,0.05)]
+                  hover:shadow-[0_20px_40px_rgb(var(--sv-teal-rgb)_/_0.05)]
                   transition-all duration-500 
                   group h-full">
-        <div className="w-12 h-12 bg-[#F7F9FB] text-[var(--syncvision-teal)] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[var(--syncvision-green)] group-hover:text-[var(--syncvision-gold)] transition-all">
+        <div className="w-12 h-12 bg-[var(--sv-teal-20)] text-[var(--sv-blue)] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[var(--sv-teal)] group-hover:text-[var(--sv-green)] transition-all">
           {item.icon}
         </div>
-        <h3 className="text-lg font-bold text-[var(--syncvision-green)] mb-3">
+        <h3 className="text-lg font-bold text-[var(--sv-teal)] mb-3">
           {item.title}
         </h3>
         <p className="text-slate-600 text-sm leading-relaxed font-light">

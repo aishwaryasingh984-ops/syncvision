@@ -11,7 +11,7 @@ import { CheckCircle2, Globe, Shield, Users } from "lucide-react";
 
 export default function PartnerPage() {
   return (
-    <main className="bg-[#F7F9FB] min-h-screen">
+    <main className="bg-[var(--sv-teal-20)] min-h-screen">
       <Navbar />
       
       {/* 1. Hero Section: Establish Authority */}
@@ -27,10 +27,10 @@ export default function PartnerPage() {
             
             {/* Left: Strategic Content */}
             <Reveal>
-              <div className="border-l-4 border-[var(--syncvision-gold)] pl-6 mb-8">
-                <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--syncvision-green)] tracking-tight">
+              <div className="border-l-4 border-[var(--sv-green)] pl-6 mb-8">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--sv-teal)] tracking-tight">
                   Our Commitment to <br />
-                  <span className="text-[var(--syncvision-teal)]">Operational Excellence</span>
+                  <span className="text-[var(--sv-blue)]">Operational Excellence</span>
                 </h2>
               </div>
               <p className="text-slate-600 text-lg font-light leading-relaxed mb-8">
@@ -47,10 +47,10 @@ export default function PartnerPage() {
                 ].map((item, idx) => (
                   <div key={idx} className="flex gap-4 group">
                     <div className="mt-1">
-                      <CheckCircle2 className="w-6 h-6 text-[var(--syncvision-gold)]" />
+                      <CheckCircle2 className="w-6 h-6 text-[var(--sv-green)]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-[var(--syncvision-green)] text-sm uppercase tracking-wider">{item.title}</h4>
+                      <h4 className="font-bold text-[var(--sv-teal)] text-sm uppercase tracking-wider">{item.title}</h4>
                       <p className="text-slate-500 text-sm font-light">{item.desc}</p>
                     </div>
                   </div>
@@ -61,25 +61,25 @@ export default function PartnerPage() {
             {/* Right: Visual Illustration / Placeholder */}
             <Reveal delay={200}>
               <div className="relative group">
-                <div className="absolute -inset-4 bg-[var(--syncvision-gold)]/10 rounded-[3rem] blur-2xl group-hover:blur-3xl transition-all" />
-                <div className="relative bg-[var(--syncvision-green)] p-12 rounded-[3rem] shadow-2xl border border-white/10 overflow-hidden">
+                <div className="absolute -inset-4 bg-[var(--sv-green)]/10 rounded-[3rem] blur-2xl group-hover:blur-3xl transition-all" />
+                <div className="relative bg-[var(--sv-teal)] p-12 rounded-[3rem] shadow-2xl border border-white/10 overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
                   
                   <div className="flex flex-col gap-8 relative z-10">
                     <div className="flex items-center gap-6">
-                      <div className="w-12 h-12 rounded-full bg-[var(--syncvision-gold)]/20 flex items-center justify-center text-[var(--syncvision-gold)]">
+                      <div className="w-12 h-12 rounded-full bg-[var(--sv-green)]/20 flex items-center justify-center text-[var(--sv-green)]">
                         <Globe size={24} />
                       </div>
                       <p className="text-white/80 font-bold uppercase tracking-widest text-xs">Wide Geographic Reach</p>
                     </div>
                     <div className="flex items-center gap-6">
-                      <div className="w-12 h-12 rounded-full bg-[var(--syncvision-gold)]/20 flex items-center justify-center text-[var(--syncvision-gold)]">
+                      <div className="w-12 h-12 rounded-full bg-[var(--sv-green)]/20 flex items-center justify-center text-[var(--sv-green)]">
                         <Shield size={24} />
                       </div>
                       <p className="text-white/80 font-bold uppercase tracking-widest text-xs">GCP-Compliant Quality</p>
                     </div>
                     <div className="flex items-center gap-6">
-                      <div className="w-12 h-12 rounded-full bg-[var(--syncvision-gold)]/20 flex items-center justify-center text-[var(--syncvision-gold)]">
+                      <div className="w-12 h-12 rounded-full bg-[var(--sv-green)]/20 flex items-center justify-center text-[var(--sv-green)]">
                         <Users size={24} />
                       </div>
                       <p className="text-white/80 font-bold uppercase tracking-widest text-xs">Experienced PI Network</p>

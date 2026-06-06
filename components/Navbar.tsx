@@ -14,6 +14,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "About us", href: "/about" },
     { name: "Services", href: "/services" },
+    { name: "Courses", href: "/courses" },
     { name: "Therapeutic Areas", href: "/therapeutic-areas" },
     { name: "Partner With Us", href: "/partner" },
     { name: "Careers", href: "/careers" },

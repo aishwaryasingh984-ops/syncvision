@@ -5,7 +5,7 @@ import { SpecialtyGrid } from "@/components/SpecialtyGrid";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
-import { ArrowRight, Search } from "lucide-react";
+import { Search } from "lucide-react";
 
 export default function TherapeuticAreasPage() {
   const btnPrimary = "cursor-pointer w-full sm:w-auto inline-flex justify-center items-center gap-2 rounded-full px-10 py-4 text-sm font-bold transition-all duration-300 shadow-lg border-2 bg-[var(--sv-green)] border-[var(--sv-green)] text-[var(--sv-teal)] hover:bg-[var(--sv-blue)] hover:text-white hover:border-[var(--sv-green)] active:scale-95";
@@ -44,10 +44,10 @@ export default function TherapeuticAreasPage() {
                 Inquire Feasibility
               </a>
               
-              <a href="/services" className={btnPrimary}>
+              {/* <a href="/services" className={btnPrimary}>
                 View SMO Services
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </a> */}
             </div>
           </Reveal>
         </div>

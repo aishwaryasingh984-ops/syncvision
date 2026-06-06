@@ -4,7 +4,8 @@ import { Briefcase, GraduationCap, CheckCircle } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
 export function JobRoles() {
-  const roles = ["Site Coordinators", "Clinical Research Coordinators", "Regulatory Support", "Quality Assurance"];
+  // const roles = ["Site Managers", "Clinical Research Coordinators", "Regulatory Support", "Quality Assurance"];
+  const roles = ["Site Managers", "Clinical Research Coordinators"];
 
   return (
     <div className="space-y-8">

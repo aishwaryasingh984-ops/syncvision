@@ -13,15 +13,16 @@ export default function Footer() {
   const footerLinks = [
     { href: "/about", label: "About Us" },
     { href: "/services", label: "Our Services" },
+    { href: "/courses", label: "Courses" },
     { href: "/partner", label: "Partner With Us" },
     { href: "/contact", label: "Contact" },
   ];
 
   const socialLinks = [
-    { Icon: Linkedin, label: "LinkedIn", color: "hover:bg-[#0077B5] hover:text-white" },
-    { Icon: Twitter, label: "Twitter", color: "hover:bg-[#1DA1F2] hover:text-white" },
-    { Icon: Facebook, label: "Facebook", color: "hover:bg-[#1877F2] hover:text-white" },
-    { Icon: Instagram, label: "Instagram", color: "hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-white" },
+    { Icon: Linkedin, label: "LinkedIn", color: "hover:bg-[#0077B5] hover:text-white", href: "https://www.linkedin.com/company/syncvision-research-solutions-llp/" },
+    { Icon: Twitter, label: "Twitter", color: "hover:bg-[#1DA1F2] hover:text-white", href: "#" },
+    { Icon: Facebook, label: "Facebook", color: "hover:bg-[#1877F2] hover:text-white" , href: "#" },
+    { Icon: Instagram, label: "Instagram", color: "hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-white", href: "#"  },
   ];
 
   return (
@@ -43,10 +44,10 @@ export default function Footer() {
             </div>
 
             <div className="flex gap-3">
-              {socialLinks.map(({ Icon, label, color }) => (
+              {socialLinks.map(({ Icon, label, color, href }) => (
                 <Link
                   key={label}
-                  href="#"
+                  href={href}
                   aria-label={label}
                   className={`rounded-xl border border-white/10 bg-white/5 p-2 text-white/70 transition-all duration-300 hover:-translate-y-1 ${color}`}
                 >

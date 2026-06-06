@@ -29,39 +29,56 @@ export default function HomeHero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-24 pb-12 sm:pb-14 md:pt-36 md:pb-20 lg:pt-12 lg:pb-0">
         <div className="max-w-3xl">
-          <Reveal>
-            {/* Full logo lockup — plain tagline version sits well on teal/dark */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] text-white tracking-tight">
-              Sync<span className="text-[var(--syncvision-gold)]">Vision</span> <br className="hidden sm:block" />
-              Research Solution LLP
-            </h1>
+  <Reveal>
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-extrabold leading-[1.1] text-white tracking-tight">
+      Sync<span className="text-[var(--syncvision-gold)]">Vision</span> <br className="hidden sm:block" />
+      Research Solution LLP
+    </h1>
 
-            <h2 className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl font-medium text-[var(--syncvision-white)] leading-snug border-l-4 border-[var(--syncvision-gold)] pl-4 italic">
-                “Where Vision Meets Integrity”
-            </h2>
+    <h2 className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl font-medium text-[var(--syncvision-white)] leading-snug border-l-4 border-[var(--syncvision-gold)] pl-4 italic">
+      &quot;Where Vision Meets Integrity&quot;
+    </h2>
 
-            {/* Description using your SMO site management text */}
-            <p className="mt-4 text-xs sm:text-sm md:text-base text-[var(--syncvision-white)]/80 leading-relaxed max-w-2xl font-light">
-              A quality-focused Site Management Organization (SMO) delivering ethical, 
-              efficient, and high-quality clinical trial site management solutions 
-              across India.
-            </p>
+    {/* Description */}
+    <p className="mt-4 text-xs sm:text-sm md:text-base text-[var(--syncvision-white)]/95 leading-relaxed max-w-2xl font-normal drop-shadow-[0_2px_6px_rgba(0,0,0,0.65)]">
+      A quality-focused Site Management Organization (SMO) delivering ethical, 
+      efficient, and high-quality clinical trial site management solutions across India — 
+      from site feasibility assessments and GCP-compliant trial conduct to sponsor 
+      collaborations, hospital partnerships, and end-to-end site management adhering 
+      to ICH-GCP guidelines, IEC approvals, and CDSCO regulations.
+    </p>
 
-            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4">
-              <Link href="/about" className="w-full sm:w-auto">
-                <button className={btnPrimary}>
-                  Know More
-                </button>
-              </Link>
+    {/* Highlights */}
+    <ul className="mt-4 space-y-1.5 text-xs sm:text-sm text-[var(--syncvision-white)]/90 font-normal list-none drop-shadow-[0_2px_6px_rgba(0,0,0,0.65)]">
+      <li className="flex items-start gap-2">
+        <span className="mt-0.5 text-[var(--syncvision-gold)]">✦</span>
+        <span>Site feasibility, informed consent process, adverse event reporting & source document verification (SDV)</span>
+      </li>
+      <li className="flex items-start gap-2">
+        <span className="mt-0.5 text-[var(--syncvision-gold)]">✦</span>
+        <span>Strategic collaborations with sponsors, CROs, and leading hospitals across India</span>
+      </li>
+      <li className="flex items-start gap-2">
+        <span className="mt-0.5 text-[var(--syncvision-gold)]">✦</span>
+        <span>Multidisciplinary team of Project Managers, Site Managers, and Project Coordinators working across every trial stage</span>
+      </li>
+    </ul>
 
-              <Link href="/services" className="w-full sm:w-auto">
-                <button className={btnSecondary}>
-                  Our Services
-                </button>
-              </Link>
-            </div>
-          </Reveal>
-        </div>
+    <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4">
+      <Link href="/about" className="w-full sm:w-auto">
+        <button className={btnPrimary}>
+          Know More
+        </button>
+      </Link>
+
+      <Link href="/services" className="w-full sm:w-auto">
+        <button className={btnSecondary}>
+          Our Services
+        </button>
+      </Link>
+    </div>
+  </Reveal>
+</div>
       </div>
 
       {/* Bottom fade */}

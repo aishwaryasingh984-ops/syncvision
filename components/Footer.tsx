@@ -98,9 +98,14 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-4">
                 <Phone className="w-5 h-5 flex-shrink-0 mt-0.5 text-[var(--sv-blue-light)]" />
-                <a href="tel:+918669569686" className="transition-colors hover:text-[var(--sv-green-light)]">
-                  +91 866 956 9686
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a href="tel:+919711416627" className="transition-colors hover:text-[var(--sv-green-light)]">
+                    +91 9711416627
+                  </a>
+                  <a href="tel:+919637340154" className="transition-colors hover:text-[var(--sv-green-light)]">
+                    +91 9637340154
+                  </a>
+                </div>
               </li>
               <li className="mt-3 border-l-2 border-[var(--sv-green)] pl-4 text-xs italic text-white/60">
                 &ldquo;Where Vision Meets Integrity&rdquo;

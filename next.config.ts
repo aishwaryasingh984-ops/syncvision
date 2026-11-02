@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Serve the static one-page site at the home page (preview branch)
+  async rewrites() {
+    return {
+      beforeFiles: [{ source: "/", destination: "/syncvision-onepage.html" }],
+      afterFiles: [],
+      fallback: [],
+    };
+  },
   images: {
     remotePatterns: [
       {
